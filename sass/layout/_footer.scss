@@ -1,0 +1,103 @@
+.foot {
+    background-color: var(--secondary-bg-color);
+    padding: 60px 0;
+}
+.foot .container {
+    display: flex;
+    align-items: baseline;
+}
+.logo-foot {
+    color: var(--primary-bg-color);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.foot-list {
+    @extend %list;
+}
+
+.foot-list-link {
+    @extend %link;
+    color: var(--primary-bg-color);
+    line-height: 1.71;
+}
+.foot-link-col {
+    color: var(--link-foot-color);
+}
+.foot-list-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.foot-social-box {
+    margin-left: 70px;
+}
+.foot-text {
+    color: var(--primary-bg-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.social-list-link-foot {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.foot-social-link:hover,
+.foot-social-link:focus {
+    background-color: var(--accent-color);
+}
+.foot-social-icon {
+    fill: var(--primary-bg-color);
+}
+.foot-form {
+    margin-left: auto;
+}
+.foot-form-label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+}
+.foot-form-box {
+    display: flex;
+}
+.foot-form-input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px;
+    width: 358px;
+    color: var(--primary-bg-color);
+    &::placeholder {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: var(--link-foot-color);
+    }
+}
+.foot-form-btn {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 28px;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-form-btn-text {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--primary-bg-color);
+}
+.foot-form-btn-icon {
+    fill: var(--primary-bg-color);
+    margin-left: 10px;
+}

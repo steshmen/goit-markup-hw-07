@@ -1,0 +1,31 @@
+.work {
+    @extend %section;
+    padding-top: 0;
+}
+.work .sec-title {
+    margin-bottom: 50px;
+}
+
+.work-list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+}
+.work-list-item {
+    position: relative;
+}
+.work-list-box {
+    position: absolute;
+    bottom: 0px;
+    padding: 27px 95px;
+    width: 100%;
+    background-color: var(--work-bg-color);
+    padding: 27px, 107px;
+}
+.work-list-text {
+    color: var(--primary-bg-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;   
+}
