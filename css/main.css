@@ -817,14 +817,15 @@ address {
   margin-top: -30px;
 }
 
+.port-btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .port-list-item {
   -ms-flex-preferred-size: calc((100% - 90px) / 3);
       flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
-}
-.port-list-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .port-list-link {
