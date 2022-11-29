@@ -1,10 +1,10 @@
-%list {
+@mixin list {
     list-style: none;
 }
-%link {
+@mixin link {
     text-decoration: none;
 }
-%section {
+@mixin section {
     padding-top: 94px;
     padding-bottom: 94px;
 }

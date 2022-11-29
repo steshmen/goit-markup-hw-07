@@ -1,10 +1,10 @@
-.head {
+.header {
     background-color: var(--primary-bg-color);
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
 }
-.head-container {
+.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,19 +14,19 @@
     align-items: center;
 }
 .nav-list {
-    @extend %list;
+    @include list;
     display: flex;
     align-items: center;
 }
-.nav .logo {
+.logo_top {
     margin-right: 92px;
 }
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
     margin-right: 50px;
     position: relative;
 }
-.nav-list-link {
-    @extend %link;
+.nav-list__link {
+    @include link;
     color: var(--primary-txt-color);
     font-weight: 500;
     line-height: 1.14;
@@ -37,7 +37,7 @@
         color: var(--accent-color);
     }
 }
-.active-page {
+.nav-list__link_active {
     color: var(--accent-color);
     &::after {
         content: "";
@@ -53,15 +53,16 @@
     }
 }
 .cont-list {
-   @extend %list;
+   @include list;
    display: flex;
    align-items: center;
 }
-.cont-list-item:first-child {
+
+.cont-list__item:first-child {
     margin-right: 48px;
 }
-.cont-list-link {
-    @extend %link;
+.cont-list__link {
+    @include link;
     color: var(--secondary-txt-color);
     display: flex;
     align-items: center;
@@ -73,11 +74,11 @@
         color: var(--accent-color);
     }
 }
-.cont-list-icon {
+.cont-list__icon {
     margin-right: 10px;
     fill: var(--secondary-txt-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .cont-list-link:hover &, .cont-list-link:focus & {
+    .cont-list__link:hover &, .cont-list__link:focus & {
         fill: var(--accent-color);
     }
 }
